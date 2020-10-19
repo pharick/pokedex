@@ -97,8 +97,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-gm-RoL">
+                                <rect key="frame" x="20" y="511" width="374" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRJ-RD-h6U">
-                                <rect key="frame" x="134" y="511" width="147" height="30"/>
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Catch"/>
                                 <connections>
@@ -112,6 +121,7 @@
                     <navigationItem key="navigationItem" id="5l8-1i-F7F"/>
                     <connections>
                         <outlet property="catchButton" destination="cRJ-RD-h6U" id="y5m-Mk-CiM"/>
+                        <outlet property="descriptionText" destination="JRg-gm-RoL" id="alu-xI-JEY"/>
                         <outlet property="imageView" destination="AQu-jg-Fsp" id="WKx-O7-gwX"/>
                         <outlet property="nameLabel" destination="JBN-Ed-V74" id="nc0-Qj-jaf"/>
                         <outlet property="numberLabel" destination="WLW-oM-XNG" id="1vo-kY-Nyz"/>
@@ -143,6 +153,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
